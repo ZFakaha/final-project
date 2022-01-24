@@ -20,11 +20,12 @@ void login(){
     char Cuser[20], Cpass[20], ulangi;
     string luser, lpass;
     
+	cout << "Jangan menggunakan spasi" << endl;
     cout << "Masukan Username = ";
-    getline(cin, luser);
+    cin >> luser;
     
     cout << "Masukan Password = ";
-    getline(cin, lpass);
+    cin >> lpass;
     
 
     ifstream mydata;
@@ -52,7 +53,8 @@ void registrasi(){
    cout << "================================================"<<endl;
    cout << "===================REGISTRASI==================="<<endl;
    cout << "================================================"<<endl;
-    cout << "Username = ";
+    cout << "Jangan menggunakan spasi" << endl;
+	cout << "Username = ";
     cin >> user;
     if(strlen(user) < 4){
         cout << "Username harus lebih dari 4 karakter";
